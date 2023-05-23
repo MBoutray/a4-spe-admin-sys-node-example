@@ -34,5 +34,6 @@ jobs:
                   script: |
                       cd /var/www/html/node-example
                       git pull origin main
+                      npm install
                       pm2 reload app.js
                       echo "Deploy ok"
